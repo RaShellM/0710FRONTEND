@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+    <span class="mat-title">Bienvenue chez Smoothie FOLIE</span>
+    <button mat-raised-button color="warn" >
+            <mat-icon>favorite</mat-icon>
+            <span> HOME</span>
+    </button>
+    <button mat-stroked-button color="accent" class="" >
+    SMOOTHIES
+    </button>
+    <button mat-icon-button color="warn" aria-label="like">
+            <mat-icon>favorite</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-grid-list cols="3" rowHeight="1:2">
+        <mat-grid-tile>
+          <mat-card class="example-card">
+              <mat-card-header>
+                  Smoothie1
+              </mat-card-header>
+              <img mat-card-image src="../../assets/vert.jpg" alt="Photo Smoothie concombre">
+              <mat-card-content>
+                    <p>
+                      blabla
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                      </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+
+        <mat-grid-tile><mat-card>
+          Simple card</mat-card></mat-grid-tile>
+        <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+        <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+        <mat-grid-tile><mat-card>Simple card</mat-card></mat-grid-tile>
+</mat-grid-list>

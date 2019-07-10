@@ -1,0 +1,20 @@
+
+<h1>{{title | uppercase}}</h1>
+<!-- <app-dashboard></app-dashboard> -->
+    <h2>{{subTitle }}</h2>
+<p>je m'appelle {{nom}}</p>
+<form class="example-form">
+        <mat-form-field appearance = "fill" class="example-full-width">
+            <input matInput placeholder='le smoothie de votre choix' type="text" 
+            [(ngModel)]="smoothie"
+            [ngModelOptions]="{standalone: true}"/>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance = "outline" class="example-full-width">
+                <textarea  matInput placeholder="Laissez nous un commentaire">{{smoothie}}</textarea>
+        </mat-form-field>
+        <br>
+  </form>
+        
+
+
