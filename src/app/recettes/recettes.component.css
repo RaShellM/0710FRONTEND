@@ -1,0 +1,9 @@
+.content{
+    margin : 40px;
+}
+img{
+    style:100%;
+}
+.mat-card-content{
+ max-height: 50px;
+}

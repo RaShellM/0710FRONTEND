@@ -1,0 +1,71 @@
+<body>
+    <div>
+        <form [formGroup]="smoothieForm" (ngSubmit)="onSubmit()">
+            <div class="content p-24">
+
+                <!-- name: Le nom du groupe -->
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Titre de la recette" formControlName="title" />
+                    <mat-error *ngIf="myForm.title.hasError('required')">
+                        Le titre est obligatoire
+                    </mat-error>
+                </mat-form-field>
+                <div class="p-8 pt-0" fxLayout="row" fxLayoutAlign="center center">
+                    <button mat-stroked-button color="primary">Créer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+<!-- 
+
+    <input type="text">le nom du smoothie</input>
+        _id?: string;
+        title: {
+            type: string;
+            required: false; -->
+<!-- };
+        ingredients: [
+            {
+                nom: {
+                    type: string;
+                    required: false;
+                };
+                quantité: {
+                    type: string;
+                    required: false;
+                };
+            }
+        ];
+        features?: {
+            cost?: {
+                type: string;
+                required: false
+            };
+            prepareTime?: {
+                type: string;
+                required: false
+            };
+        };
+        advice?: {
+            type: string;
+        };
+        description?: {
+            type: string;
+        };
+        steps: [
+            {
+                stepText: {
+                    type: string;
+                };
+            }
+        ];
+        photo?: [
+            {
+                titre?: string;
+                path?: string;
+                description?: string;
+            }
+        ];
+    } -->

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { getLocaleDateTimeFormat } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,28 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class DashboardComponent implements OnInit {
   @Input() smoothie :string;
-  nom = 'Rachel';
-
-  constructor() { 
-  };
+  nom = 'Rachel MARTIN';
+  // date= new Date();
+  // date= Date.now();
+  // console.log(date);
+  
   private _title;
   subTitle: string;
 
-
   ngOnInit() {
-    this.setSubTitle();
-    this.title ='Bienvenue sur Smoothie en FOLIE';
-    // this.smoothie ='avocat carotte';
-  };
-
-  set title(mTitle:string){
-    this._title = mTitle;
-  }
-  get title():string{
-    return this._title;
-  }
-
-  setSubTitle():void{
-    this.subTitle = 'la référence pour vos smoothies';
-  }
+}
 }

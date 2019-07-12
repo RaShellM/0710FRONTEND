@@ -1,0 +1,32 @@
+<body>
+<ng-template #detail>
+
+    <mat-card class="example-card">
+        <h1>{{unSeulSmoothie.title}}</h1>
+
+        <h3>Description</h3>
+        {{unSeulSmoothie.description}}
+
+        <h3>Ingredients</h3>
+        <mat-list-item *ngFor="let mIngredients of unSeulSmoothie.ingredients">
+           <p> {{mIngredients.nom}},  quantité : {{mIngredients.quantite}}</p>
+        </mat-list-item>
+
+        <h3>Etapes</h3>
+        <mat-list-item *ngFor="let mSteps of unSeulSmoothie.steps, let i = index">
+            <p matLine> {{i+1}} : {{mSteps.stepText}}
+            </p>
+        </mat-list-item>
+
+<!-- 
+        <h3>Caractéristiques</h3>
+        <mat-list-item *ngFor="let mCara of unSeulSmoothie.features">
+           <p> {{mCara.cost}} {{mCara.prepareTime}}</p>
+        </mat-list-item> -->
+    </mat-card>
+
+</ng-template>
+<ng-container *ngTemplateOutlet="unSeulSmoothie ? detail : ''"></ng-container>
+
+    <button mat-raised-button color="accent" routerLink="/recettes">Retour aux recettes</button>
+</body>
